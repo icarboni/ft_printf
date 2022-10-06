@@ -6,7 +6,7 @@
 #    By: icarboni <icarboni@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 15:15:10 by icarboni          #+#    #+#              #
-#    Updated: 2022/10/05 18:15:26 by icarboni         ###   ########.fr        #
+#    Updated: 2022/10/06 10:33:57 by icarboni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 FLAG = -Wall -Wextra -Werror -I. -c
 SRC = ft_printf.c ft_printf_utils.c ft_putnbr.c ft_hexadecimal.c ft_uputnbr.c
 
-OBJ = ./*.o
+OBJ = ${SRC:.c=.o}
 
 all: $(NAME)
 
